@@ -18,3 +18,4 @@ footer: MIT Licensed | Copyright © 2018-present lianglixiong
 '# Hello VuePress' 
 
 ## 添加自动化部署 修改
+添加gh-pages分支打包
