@@ -17,4 +17,4 @@ footer: MIT Licensed | Copyright © 2018-present lianglixiong
 
 '# Hello VuePress' 
 
-## 添加自动化部署
+## 添加自动化部署 修改
