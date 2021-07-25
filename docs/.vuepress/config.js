@@ -22,8 +22,10 @@ module.exports = {
             },
             {
                 text: 'JavaScript', 
+                ariaLabel: 'JavaScript Menu',
                 items: [
-                    { text: 'JavaScript基础', link: '/JavaScript/' }
+                    { text: 'JavaScript基础', link: '/JavaScript/basics/' },
+                    { text: 'HTTP', link: '/JavaScript/http/' }
                 ] 
             },
             { 
@@ -37,6 +39,14 @@ module.exports = {
             {
                 text: 'es6标准入门', 
                 link: '/es6/',
+            },
+            {
+                text: 'TypeScript', 
+                link: '/typeScript/',
+            },
+            {
+                text: 'React', 
+                link: '/react/',
             },
             {
                 text: '操作系统指南', 
@@ -86,7 +96,31 @@ module.exports = {
                     'module-load'
                 ]
             }],
-            '/JavaScript/': [{
+            //TypeScript
+            '/typeScript/': [{
+                title: 'TypeScript',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'config',
+                    'class',
+                    'interface',
+                    'generic-paradigm',
+                    'module',
+                    'decorator'
+                ]
+            }],
+            '/react/': [{
+                title: 'React',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'react-router'
+                ]
+            }],
+            '/JavaScript/basics/': [{
                 title: 'JavaScript基础',
                 collapsable: false,
                 sidebarDepth: 2,
@@ -94,6 +128,18 @@ module.exports = {
                     '',
                     'parseInt',
                     'http'
+                ]
+            }],
+            '/JavaScript/http/': [{
+                title: 'HTTP',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'cookies',
+                    'cache',
+                    'https',
+                    'other'
                 ]
             }],
             '/mysql/': [{
