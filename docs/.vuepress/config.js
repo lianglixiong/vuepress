@@ -25,37 +25,43 @@ module.exports = {
                 ariaLabel: 'JavaScript Menu',
                 items: [
                     { text: 'JavaScript基础', link: '/JavaScript/basics/' },
-                    { text: 'HTTP', link: '/JavaScript/http/' }
+                    { text: 'HTTP', link: '/JavaScript/http/' },
+                    { text: 'js正则', link: '/regular/' },
+                    { text: 'es6标准入门', link: '/es6/' }
                 ] 
             },
             { 
                 text: 'mysql', 
                 link: '/mysql/',
             },
-            {
-                text: 'js正则', 
-                link: '/regular/',
-            },
-            {
-                text: 'es6标准入门', 
-                link: '/es6/',
-            },
+            // {
+            //     text: 'js正则', 
+            //     link: '/regular/',
+            // },
+            // {
+            //     text: 'es6标准入门', 
+            //     link: '/es6/',
+            // },
             {
                 text: 'TypeScript', 
                 link: '/typeScript/',
             },
             {
+                text: 'webpack', 
+                link: '/webpack/',
+            },
+            {
                 text: 'React', 
                 link: '/react/',
             },
-            {
-                text: '操作系统指南', 
-                ariaLabel: 'system Menu',
-                items: [
-                    { text: '操作系统入门', link: '/system/introduction/' },
+            // {
+            //     text: '操作系统指南', 
+            //     ariaLabel: 'system Menu',
+            //     items: [
+            //         { text: '操作系统入门', link: '/system/introduction/' },
                     
-                ]
-            },
+            //     ]
+            // },
             { 
                 text: 'java', 
                 ariaLabel: 'Language Menu',
@@ -111,6 +117,20 @@ module.exports = {
                     'decorator'
                 ]
             }],
+            '/webpack/': [{
+                title: 'webpack',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'high-order',
+                    'analysis',
+                    // 'interface',
+                    // 'generic-paradigm',
+                    // 'module',
+                    // 'decorator'
+                ]
+            }],
             '/react/': [{
                 title: 'React',
                 collapsable: false,
@@ -126,7 +146,10 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     '',
+                    'prototype',
                     'parseInt',
+                    'handwritten',
+                    'cross-domain',
                     'http'
                 ]
             }],
