@@ -20,6 +20,10 @@ module.exports = {
                 text: 'axios', 
                 link: '/axios/',
             },
+            { 
+                text: 'vuex(3.6.2)', 
+                link: '/vuex/',
+            },
             {
                 text: 'JavaScript', 
                 ariaLabel: 'JavaScript Menu',
@@ -75,6 +79,20 @@ module.exports = {
         ],
         sidebar: {
             '/axios/': getThemeSidebar('axios', '介绍'),
+            '/vuex/': [{
+                title: 'vuex',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'Store',
+                    'mapGetters',
+                    'mapState',
+                    // 'generic-paradigm',
+                    // 'module',
+                    // 'decorator'
+                ]
+            }],
             '/regular/': [{
                 title: 'js正则',
                 collapsable: false,
