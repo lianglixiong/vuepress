@@ -5,6 +5,7 @@ module.exports = {
         resolve: {
             alias: {
                 '@assets': path.resolve(__dirname, "assets"),
+                '@alias': path.resolve(__dirname, "assets"),
             }
         }
     },
@@ -19,6 +20,10 @@ module.exports = {
             { 
                 text: 'axios', 
                 link: '/axios/',
+            },
+            { 
+                text: 'Vue(2.6.14)', 
+                link: '/vue/',
             },
             { 
                 text: 'vuex(3.6.2)', 
@@ -79,6 +84,22 @@ module.exports = {
         ],
         sidebar: {
             '/axios/': getThemeSidebar('axios', '介绍'),
+            '/vue/': [{
+                title: 'vue源码解读',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '',
+                    'initialization',
+                    'responsive-principle',
+                    'global-api'
+                    // 'mapGetters',
+                    // 'mapState',
+                    // 'generic-paradigm',
+                    // 'module',
+                    // 'decorator'
+                ]
+            }],
             '/vuex/': [{
                 title: 'vuex',
                 collapsable: false,
@@ -168,7 +189,8 @@ module.exports = {
                     'parseInt',
                     'handwritten',
                     'cross-domain',
-                    'http'
+                    'http',
+                    'network'
                 ]
             }],
             '/JavaScript/http/': [{
